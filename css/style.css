@@ -35,6 +35,25 @@
   }
 }
 
+
+  /* Default styles */
+  .ht {
+    background-image: url('../img/Hro.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .ht {
+      background-size: contain; /* Adjust background size for smaller screens */
+      height: 60vh; /* Reduce height to fit mobile view */
+    }
+  }
+
+
+
 .reviews-container {
   width: 90%;
   max-width: 800px;
