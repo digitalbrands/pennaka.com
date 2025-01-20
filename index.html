@@ -116,30 +116,33 @@
                                         <div class="d-flex flex-column justify-content-center 
                                         align-items-center h-100 text-center text-white">
                                         
-                                <form style="background-color: rgba(0, 0, 0, 0.8); padding: 4% 10%; border-radius: 10px;">
-                                    <h4 style="color: #fa6606;">Get In Touch</h4>
-                                    <input type="text" class="form-control" placeholder="Enter Name"/>
-                                    <input type="email" class="form-control mt-2" placeholder="Enter Email Address"/>
-                                    <input type="tel" class="form-control mt-2" placeholder="Enter Mobile Number"/>
-                                    <input type="text" class="form-control mt-2" placeholder="Enter Company Name"/>
-                                    <select class="form-select mt-2" aria-label="Default select example">
-                                        <option selected>Select Services</option>
-                                        <option value="Web Designing">Web Designing</option>
-                                        <option value="SEO">SEO</option>
-                                        <option value="PPC">PPC</option>
-                                        <option value="Social Media">Social Media</option>
-                                        <option value="Email Marketing">Email Marketing</option>
-                                        <option value="App Development">App Development</option>
-                                        <option value="Influencer Marketing">Influencer Marketing</option>
-                                        <option value="Personal Branding">Personal Branding</option>
-                                        <option value="Whatsapp Marketing">Whatsapp Marketing</option>
-                                      </select>
-                                      <textarea class="form-control mt-2" placeholder="Enter Your Message Here" id="floatingTextarea"></textarea>
-                                      <p style="font-size: 10px;display: flex;
-                                      align-items: center;
-                                      gap: 5px;"><span style="margin: 0"><input type="checkbox" required /></span>I accept the <a href="terms.html">Terms of Service</a></p>
-                                      <button type="button" class="btn" style="background-color: #fa6606; color: white;">Submit</button>
-                                </form>
+                                        <form action="contact.php" method="POST" style="background-color: rgba(0, 0, 0, 0.8); padding: 4% 10%; border-radius: 10px;">
+                                            <h4 style="color: #fa6606;">Get In Touch</h4>
+                                            <input type="text" name="name" class="form-control" placeholder="Enter Name" required />
+                                            <input type="email" name="email" class="form-control mt-2" placeholder="Enter Email Address" required />
+                                            <input type="tel" name="mobile" class="form-control mt-2" placeholder="Enter Mobile Number" required />
+                                            <input type="text" name="company" class="form-control mt-2" placeholder="Enter Company Name" required />
+                                            <select name="service" class="form-select mt-2" required>
+                                                <option value="" disabled selected>Select Services</option>
+                                                <option value="Web Designing">Web Designing</option>
+                                                <option value="SEO">SEO</option>
+                                                <option value="PPC">PPC</option>
+                                                <option value="Social Media">Social Media</option>
+                                                <option value="Email Marketing">Email Marketing</option>
+                                                <option value="App Development">App Development</option>
+                                                <option value="Influencer Marketing">Influencer Marketing</option>
+                                                <option value="Personal Branding">Personal Branding</option>
+                                                <option value="Whatsapp Marketing">Whatsapp Marketing</option>
+                                            </select>
+                                            <textarea name="message" class="form-control mt-2" placeholder="Enter Your Message Here" required></textarea>
+                                            <p style="font-size: 10px; display: flex; align-items: center; gap: 5px;">
+                                                <input type="checkbox" name="terms" required />
+                                                I accept the <a href="terms.html">Terms of Service</a>
+                                            </p>
+                                            <button type="submit" class="btn" style="background-color: #fa6606; color: white;">Submit</button>
+                                        </form>
+                                        
+                                          
                             </div>
                                     </div>
                                 </div>
@@ -431,9 +434,9 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 portfolio-item">
                                     <div class="position-relative rounded overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/Banquet hall.png" alt="">
+                                        <img class="img-fluid w-100" src="img/Banquet HAlls.png" alt="">
                                         <div class="portfolio-overlay">
-                                            <a class="btn btn-light" href="img/Banquet hall.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                            <a class="btn btn-light" href="img/Banquet HAlls.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                             <div class="mt-auto">
                                                 <small class="text-white"><i class="fa fa-folder me-2"></i>Banquet Halls</small>
                                                 <a class="h5 d-block text-white mt-1 mb-0" href="">Banquet Halls</a>
@@ -499,9 +502,9 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 portfolio-item second">
                                     <div class="position-relative rounded overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/Farmlands.png" alt="">
+                                        <img class="img-fluid w-100" src="img/Farm Lands.png" alt="">
                                         <div class="portfolio-overlay">
-                                            <a class="btn btn-light" href="img/Farmlands.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                            <a class="btn btn-light" href="img/Farm Lands.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                             <div class="mt-auto">
                                                 <small class="text-white"><i class="fa fa-folder me-2"></i>Farm Land</small>
                                                 <a class="h5 d-block text-white mt-1 mb-0" href="">Farm Land</a>
@@ -511,9 +514,9 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 portfolio-item first">
                                     <div class="position-relative rounded overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/Startups.png" alt="">
+                                        <img class="img-fluid w-100" src="img/Startup.png" alt="">
                                         <div class="portfolio-overlay">
-                                            <a class="btn btn-light" href="img/Startups.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                            <a class="btn btn-light" href="img/Startup.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                             <div class="mt-auto">
                                                 <small class="text-white"><i class="fa fa-folder me-2"></i>Start Up's</small>
                                                 <a class="h5 d-block text-white mt-1 mb-0" href="">Start Up's</a>
@@ -527,9 +530,9 @@
                             <div class="row g-4">
                                 <div class="col-lg-4 col-md-6 portfolio-item first">
                                     <div class="position-relative rounded overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/auto mobile industry.png" alt="">
+                                        <img class="img-fluid w-100" src="img/Automobiles.png" alt="">
                                         <div class="portfolio-overlay">
-                                            <a class="btn btn-light" href="img/auto mobile industry.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                            <a class="btn btn-light" href="img/Automobiles.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                             <div class="mt-auto">
                                                 <small class="text-white"><i class="fa fa-folder me-2"></i>Automobile</small>
                                                 <a class="h5 d-block text-white mt-1 mb-0" href="">Automobile</a>
@@ -551,9 +554,9 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 portfolio-item first">
                                     <div class="position-relative rounded overflow-hidden">
-                                        <img class="img-fluid w-100" src="img/Startups.png" alt="">
+                                        <img class="img-fluid w-100" src="img/Startup.png" alt="">
                                         <div class="portfolio-overlay">
-                                            <a class="btn btn-light" href="img/Startups.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                            <a class="btn btn-light" href="img/Startup.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
                                             <div class="mt-auto">
                                                 <small class="text-white"><i class="fa fa-folder me-2"></i>Start Up's</small>
                                                 <a class="h5 d-block text-white mt-1 mb-0" href="">Start Up's</a>
